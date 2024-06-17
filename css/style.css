@@ -77,10 +77,10 @@
     
 }
 
-/* Estilos para dispositivos móviles */
+/* Estilos para celular*/
 @media (max-width: 992px) {
     .navbar-collapse {
-        background-color: #343a40; /* Asegúrate de que el menú desplegable tenga el mismo color de fondo */
+        background-color: #343a40;
     }
 
     .navbar-nav {
@@ -95,7 +95,7 @@
 
 /* Estilos para el main */
 .main {
-    padding: 80px 20px 20px; /* Ajustar el padding para evitar que el contenido quede oculto bajo el navbar fijo */
+    padding: 80px 20px 20px; 
 }
 
 .intro {
@@ -146,7 +146,7 @@
     color: #6c757d;
 }
 
-/* Hover effect on product images */
+/* efecto sobre imagenes */
 .product img {
     transition: transform 0.3s ease;
 }
@@ -209,7 +209,6 @@
 .footer .fab:focus {
     color: #ddd;
 }
-/*ESTILOS PARA FAQS*/
 
 /* Estilos para la sección de FAQs */
 .faqs {
@@ -404,7 +403,7 @@
     background-color: #495057;
 }
 
-/* Media Queries para la sección de productos */
+/* Media Queries para la sección de productos en celular*/
 @media (min-width: 768px) {
     .filters .btn-group-vertical {
         flex-direction: row;
