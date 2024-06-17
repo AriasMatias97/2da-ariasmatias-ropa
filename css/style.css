@@ -1,0 +1,416 @@
+/* Estilos para el header */
+.header {
+    background-color: #343a40; /* Color oscuro */
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-brand .logo {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ddd;
+}
+/* Estilos para el carousel */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    color: white;
+    background-color: #343a40;
+    height: 300px;
+    width: 50px;
+    
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #343a40; /* Asegúrate de que el menú desplegable tenga el mismo color de fondo */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para el main */
+.main {
+    padding: 80px 20px 20px; /* Ajustar el padding para evitar que el contenido quede oculto bajo el navbar fijo */
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    margin-bottom: 30px;
+}
+
+
+/* Estilos para la sección de productos */
+.products {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.product.card:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.product .card-title {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+.product .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Hover effect on product images */
+.product img {
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-links,
+.social-links {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li,
+.social-links li {
+    margin: 0 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: #ddd;
+}
+
+/* Estilos para redes sociales en el footer */
+.footer .fab {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .fab:hover,
+.footer .fab:focus {
+    color: #ddd;
+}
+/*ESTILOS PARA FAQS*/
+
+/* Estilos para la sección de FAQs */
+.faqs {
+    padding: 20px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq input[type="checkbox"] {
+    display: none;
+}
+
+.faq-question {
+    display: block;
+    font-size: 1.5rem;
+    color: #343a40;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-answer p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-links,
+.social-links {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li,
+.social-links li {
+    margin: 0 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: #ddd;
+}
+
+/* Estilos para la sección de "Quiénes Somos" */
+.about-us {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.about-us p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-us-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.main-image{
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+}
+
+/* Estilos para la sección de detalles de contacto */
+.contact-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details ul li {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.contact-details ul li strong {
+    color: #343a40;
+}
+
+/* Estilos para la sección de productos */
+.product-grid {
+    padding: 20px 0;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #343a40;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.filters {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filters .btn-group-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filters .btn {
+    margin: 5px 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.filters .btn:hover {
+    background-color: #495057;
+}
+
+/* Media Queries para la sección de productos */
+@media (min-width: 768px) {
+    .filters .btn-group-vertical {
+        flex-direction: row;
+    }
+
+    .filters .btn {
+        margin: 0 5px;
+    }
+}
