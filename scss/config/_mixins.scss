@@ -1,0 +1,44 @@
+// Mixin para transiciones//
+@mixin transition($property, $duration, $ease) {
+    transition: $property $duration $ease;
+  }
+  // Mixin para un borde redondo
+  @mixin redondo($radius) {
+    border-radius: $radius;
+  }
+  // Mixin para un box-shadow
+  @mixin sombra($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+  }
+ // Mixin para ancho
+@mixin ancho($w) {
+    width: $w;
+  }
+  // Mixin para alto
+  @mixin alto($h) {
+    height: $h;
+  }
+  // Mixin para padding
+  @mixin spa($p) {
+    padding: $p;
+  }
+   // Mixin para margin
+   @mixin space2($m) {
+    margin: $m;
+   }
+  
+  $color-rdsociales: (
+    facebook: #2222e9,
+    twitter: hwb(0 100% 0%),
+    whatsapp: hsl(120, 81%, 53%),
+    instagram: rgb(255, 0, 234),
+  );
+  //redes       colores//
+  @each $redes, $colores in $color-rdsociales{
+    .color-redsociales-#{$redes}{
+      color: $colores;
+    }
+  }
+   
+  
+  

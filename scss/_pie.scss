@@ -1,0 +1,49 @@
+// Estilos para el footer //
+.pie {
+    background-color: $color-primario;
+    color: $color-secundario;
+    @include spa (20px 20px);
+    text-align: center;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         }
+.pie p {
+@include space2 (0);
+ font-size: 1rem;
+    }
+}
+.pie-links {
+    color: $color-secundario;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    list-style: none
+}
+.pie,
+.social-links {
+    @include space2 (10px 0);
+    @include spa (0);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.pie-links li,
+.social-links li {
+    @include space2 (0 10px);
+.footer-link:hover,
+.footer-link:focus {
+    color: $color-secundario;
+}
+/* Estilos para redes sociales en el footer */
+.pie .fab {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+.pie .fab:hover,
+.pie .fab:focus {
+    color: $color-secundario;
+}
+}

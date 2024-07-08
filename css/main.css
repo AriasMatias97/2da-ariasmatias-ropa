@@ -1,0 +1,229 @@
+@charset "UTF-8";
+.color-redsociales-facebook {
+  color: #2222e9;
+}
+
+.color-redsociales-twitter {
+  color: hwb(0 100% 0%);
+}
+
+.color-redsociales-whatsapp {
+  color: hsl(120, 81%, 53%);
+}
+
+.color-redsociales-instagram {
+  color: rgb(255, 0, 234);
+}
+
+* {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #343a40;
+  color: #fff;
+  color: #444;
+  color: #333;
+  color: #ddd;
+}
+
+/* Estilos para el Header */
+.navegador {
+  background-color: #343a40;
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navegador .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px, 0;
+  background-color: #343a40;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  background: none;
+}
+.navbar .logo {
+  max-height: 60px;
+  margin-right: 10px;
+}
+.navbar-toggler {
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+  background-color: #343a40;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  background-color: #343a40;
+}
+
+.nav-item {
+  margin: 0, 0, 0, 20px;
+  background-color: #343a40;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ddd;
+}
+
+/* Estilos para el carousel */
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #fff;
+  background-color: #343a40;
+  height: 300px;
+  width: 50px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #343a40;
+}
+
+/* Estilos para el main */
+.principal {
+  padding: 80px 20px 20px;
+}
+
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0, 0, 20px, 0;
+}
+
+.intro h1 {
+  margin: 0, 0, 30px, 0;
+  color: #343a40;
+}
+
+/* Estilos para la sección de productos */
+.products {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.products h2 {
+  text-align: center;
+  margin: 0, 0, 40px, 0;
+  color: #343a40;
+}
+
+.product.card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.product.card:hover {
+  transform: translateY(-10px);
+}
+
+.product img {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.product .card-title {
+  font-size: 1.25rem;
+  margin: 10px;
+}
+
+.product .card-text {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+/* efecto sobre imagenes */
+.product img {
+  transition: transform 0.3s ease;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.pie {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+}
+.pie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pie .pie p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pie-links {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.pie,
+.social-links {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pie-links li,
+.social-links li {
+  margin: 0 10px;
+  /* Estilos para redes sociales en el footer */
+}
+.pie-links li .footer-link:hover,
+.pie-links li .footer-link:focus,
+.social-links li .footer-link:hover,
+.social-links li .footer-link:focus {
+  color: #fff;
+}
+.pie-links li .pie .fab,
+.social-links li .pie .fab {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+.pie-links li .pie .fab:hover,
+.pie-links li .pie .fab:focus,
+.social-links li .pie .fab:hover,
+.social-links li .pie .fab:focus {
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

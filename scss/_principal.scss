@@ -1,0 +1,65 @@
+/* Estilos para el carousel */
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  color: $color-secundario;
+  background-color: $color-primario;
+  @include alto (300px);
+  @include ancho (50px);
+  &-icon {
+    background-color: $color-primario
+  }
+}
+/* Estilos para el main */
+.principal {
+  @include spa (80px 20px 20px); 
+}
+.intro { 
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @include space2 ((0,0,20px,0));
+}
+.intro h1 {
+  @include space2 ((0,0,30px,0));
+  color: $color-primario;
+}
+/* Estilos para la sección de productos */
+.products {
+  @include spa (50px 20px);
+  background-color: $color-secundario
+}
+.products h2 {
+  text-align: center;
+  @include space2 ((0,0,40px,0));
+  color: $color-primario;
+}
+.product.card {
+  border: none;
+  transition: transform 0.3s;
+}
+.product.card:hover {
+  transform: translateY(-10px);
+}
+.product img {
+  max-height: 250px;
+  object-fit: cover;
+}
+.product .card-title {
+  font-size: 1.25rem;
+  @include space2 (10px);
+}
+.product .card-text {
+  font-size: 1rem;
+  color: $color-primario
+}
+/* efecto sobre imagenes */
+.product img {
+  transition: transform 0.3s ease;
+}
+.product:hover img {
+  transform: scale(1.1);
+}

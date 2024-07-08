@@ -1,0 +1,9 @@
+//reset
+@import "./config/vars";
+@import "./config/mixins";
+@import "./config/reset";
+//layout - estructura html
+@import "./cabeza";
+@import "./principal";
+@import "./pie";
+//media queries
