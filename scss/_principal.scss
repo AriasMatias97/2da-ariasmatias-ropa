@@ -30,7 +30,7 @@
 /* Estilos para la sección de productos */
 .products {
   @include spa (50px 20px);
-  background-color: $color-secundario
+  background-color: $color-secundario;
 }
 .products h2 {
   text-align: center;
@@ -62,4 +62,102 @@
 }
 .product:hover img {
   transform: scale(1.1);
+}
+// principal de contacto//
+.contact-details {
+  @include spa (20px);
+  background-color: $color-secundario;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @include space2 ((0,0,20px,0))
+}
+.contact-details h2 {
+  font-size: 2rem;
+  @include space2 ((0,0,20px,0));
+  color: $color-primario;
+}
+.contact-details ul {
+  list-style: none;
+  @include spa (0);
+}
+.contact-details ul li {
+  font-size: 1rem;
+  color: $color-primario;
+  @include space2 ((0,0,10px,0));
+}
+.contact-details ul li strong {
+  color: $color-primario
+}
+//quienes somos//
+.about-us {
+  padding: 20px;
+  background-color: $color-secundario;
+  @include space2 ((0,0,20px,0));
+  & h2 {
+    font-size: 2rem;
+    @include space2 ((0,0,20px,0));
+    color: $color-primario
+  }
+}
+.about-us p {
+  font-size: 1rem;
+  color: $color-primario;
+  @include space2 ((0,0,20px,0));
+  line-height: 1.6;
+}
+.about-us-image {
+  max-width: 100%;
+  @include alto (auto);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @include space2 (20px);
+}
+.main-image{
+      max-width: 100%;
+      @include alto (auto);
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      @include space2 (20px);
+}
+/* Estilos para la sección de productos */
+.product-grid {
+  @include spa (20px 0);
+}
+.product {
+  text-align: center;
+ @include space2 ((0,0,20px,0));
+}
+.product-image {
+  max-width: 100%;
+  @include alto (auto);
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.product:hover .product-image {
+  transform: scale(1.05);
+}
+.product-title {
+  font-size: 1.2rem;
+  @include space2 (10px);
+  color: $color-primario;
+}
+.product-price {
+  font-size: 1rem;
+  color: $color-primario;
+}
+.filters {
+  @include space2 ((0,0,20px,0));
+  text-align: center;
+}
+.filters .btn-group-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filters .btn {
+  margin: 5px 0;
+  background-color: $color-primario;
+  color: $color-secundario;
+}
+.filters .btn:hover {
+  background-color: $color-secundario;
 }

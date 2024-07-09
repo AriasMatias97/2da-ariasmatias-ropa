@@ -22,7 +22,6 @@
   color: #fff;
   color: #444;
   color: #333;
-  color: #ddd;
 }
 
 /* Estilos para el Header */
@@ -169,6 +168,121 @@
   transform: scale(1.1);
 }
 
+.contact-details {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0, 0, 20px, 0;
+}
+
+.contact-details h2 {
+  font-size: 2rem;
+  margin: 0, 0, 20px, 0;
+  color: #343a40;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details ul li {
+  font-size: 1rem;
+  color: #343a40;
+  margin: 0, 0, 10px, 0;
+}
+
+.contact-details ul li strong {
+  color: #343a40;
+}
+
+.about-us {
+  padding: 20px;
+  background-color: #fff;
+  margin: 0, 0, 20px, 0;
+}
+.about-us h2 {
+  font-size: 2rem;
+  margin: 0, 0, 20px, 0;
+  color: #343a40;
+}
+
+.about-us p {
+  font-size: 1rem;
+  color: #343a40;
+  margin: 0, 0, 20px, 0;
+  line-height: 1.6;
+}
+
+.about-us-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Estilos para la sección de productos */
+.product-grid {
+  padding: 20px 0;
+}
+
+.product {
+  text-align: center;
+  margin: 0, 0, 20px, 0;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 10px;
+  color: #343a40;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+.filters {
+  margin: 0, 0, 20px, 0;
+  text-align: center;
+}
+
+.filters .btn-group-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters .btn {
+  margin: 5px 0;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.filters .btn:hover {
+  background-color: #fff;
+}
+
 .pie {
   background-color: #343a40;
   color: #fff;
@@ -180,9 +294,10 @@
   flex-direction: column;
   align-items: center;
 }
-.pie .pie p {
+.pie .pie-container p {
   margin: 0;
   font-size: 1rem;
+  color: #fff;
 }
 
 .pie-links {
@@ -224,6 +339,29 @@
 .social-links li .pie .fab:hover,
 .social-links li .pie .fab:focus {
   color: #fff;
+}
+
+/* Estilos para celular*/
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+/* Media Queries para la sección de productos en celular*/
+@media (min-width: 768px) {
+  .filters .btn-group-vertical {
+    flex-direction: row;
+  }
+  .filters .btn {
+    margin: 0 5px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

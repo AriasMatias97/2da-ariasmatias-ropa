@@ -1,0 +1,22 @@
+/* Estilos para celular*/
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: $color-primario;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item {
+        @include space2 (10px 0);
+    }
+}
+/* Media Queries para la sección de productos en celular*/
+@media (min-width: 768px) {
+    .filters .btn-group-vertical {
+        flex-direction: row;
+    }
+    .filters .btn {
+        @include space2 (0 5px);
+    }
+    }
