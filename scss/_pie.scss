@@ -8,20 +8,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-         }
-.pie-container p {
+& p {
 @include space2 (0);
  font-size: 1rem;
- color: $color-secundario;
+ color: $color-secundario
     }
 }
-.pie-links {
-    color: $color-secundario;
+&-links {
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     list-style: none
+}
 }
 .pie,
 .social-links {

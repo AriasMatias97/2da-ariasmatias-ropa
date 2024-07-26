@@ -2,6 +2,8 @@
 .carousel-item img {
   max-height: 600px;
   object-fit: cover;
+  @include space2 ((0,0,40px,0));
+  
 }
 .carousel-control-prev,
 .carousel-control-next{
@@ -15,28 +17,37 @@
 }
 /* Estilos para el main */
 .principal {
-  @include spa (80px 20px 20px); 
+  @include spa (125px 20px 20px); 
 }
 .intro { 
   text-align: center;
-  padding: 50px 20px;
+  padding: 20px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   @include space2 ((0,0,20px,0));
 }
 .intro h1 {
-  @include space2 ((0,0,30px,0));
+  @include space2 ((0,0,40px,0));
   color: $color-primario;
+  @include spa (20px);
+  border: 3px solid $color-secundario;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* Estilos para la sección de productos */
 .products {
   @include spa (50px 20px);
   background-color: $color-secundario;
 }
-.products h2 {
+.titulo-principal {
   text-align: center;
   @include space2 ((0,0,40px,0));
   color: $color-primario;
-}
+  @include spa (10px);
+  border: 3px solid $color-secundario;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+ }
+
 .product.card {
   border: none;
   transition: transform 0.3s;
@@ -46,11 +57,11 @@
 }
 .product img {
   max-height: 250px;
-  object-fit: cover;
+  object-fit: contain;
+  @include space2 (20px);
 }
 .product .card-title {
   font-size: 1.25rem;
-  @include space2 (10px);
 }
 .product .card-text {
   font-size: 1rem;
@@ -68,24 +79,14 @@
   @include spa (20px);
   background-color: $color-secundario;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  @include space2 ((0,0,20px,0))
-}
-.contact-details h2 {
-  font-size: 2rem;
   @include space2 ((0,0,20px,0));
-  color: $color-primario;
-}
-.contact-details ul {
+& ul {
   list-style: none;
   @include spa (0);
 }
-.contact-details ul li {
-  font-size: 1rem;
-  color: $color-primario;
+& li {
   @include space2 ((0,0,10px,0));
 }
-.contact-details ul li strong {
-  color: $color-primario
 }
 //quienes somos//
 .about-us {
@@ -93,23 +94,14 @@
   background-color: $color-secundario;
   @include space2 ((0,0,20px,0));
   & h2 {
-    font-size: 2rem;
-    @include space2 ((0,0,20px,0));
     color: $color-primario
   }
-}
-.about-us p {
-  font-size: 1rem;
-  color: $color-primario;
-  @include space2 ((0,0,20px,0));
-  line-height: 1.6;
-}
-.about-us-image {
+&-image {
   max-width: 100%;
   @include alto (auto);
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  @include space2 (20px);
+}
 }
 .main-image{
       max-width: 100%;
@@ -119,45 +111,90 @@
       @include space2 (20px);
 }
 /* Estilos para la sección de productos */
-.product-grid {
-  @include spa (20px 0);
-}
 .product {
   text-align: center;
  @include space2 ((0,0,20px,0));
-}
-.product-image {
+&-image {
   max-width: 100%;
   @include alto (auto);
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
 }
-.product:hover .product-image {
-  transform: scale(1.05);
+&:hover &-image {
+  transform: scale(1.05); 
 }
-.product-title {
-  font-size: 1.2rem;
+&-title {
   @include space2 (10px);
   color: $color-primario;
 }
-.product-price {
-  font-size: 1rem;
-  color: $color-primario;
 }
 .filters {
   @include space2 ((0,0,20px,0));
   text-align: center;
-}
-.filters .btn-group-vertical {
+& .btn-group-vertical {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.filters .btn {
+& .btn {
   margin: 5px 0;
-  background-color: $color-primario;
-  color: $color-secundario;
 }
-.filters .btn:hover {
+}
+/* Estilos para la Sección de FAQs */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  @include spa((0, 20px));
+}
+.titulo-principal{
+  text-align: center;
+    margin-bottom: 20px;
+}
+.faqs {
   background-color: $color-secundario;
+  color: $color-primario;
+  @include spa (50px);
+  }
+  .faqs-item {
+    margin-bottom: 10px;
+    transition: (all, 0.3s, ease-in-out);
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    }
+    .faqs-question {
+      @include spa(15px);
+      margin: 0;
+      transition: (background-color, 0.3s, ease-in-out);
+      &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+      }
+    }
+    .faqs-answer {
+      display: none;
+      @include spa(15px);
+      border-top: 1px solid $color-primario;
+      &.active {
+        display: block;
+      }
+    }
+/** animaciones**/
+.titulo-principal {
+  animation-name: move-title;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: infinite;
 }
+@keyframes move-title {
+0%{
+  transform: translateX(0);
+  }
+25%{
+  transform: translateX(20px);
+  }
+  50%{
+    transform: translateX(0);
+    }
+}
+

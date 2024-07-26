@@ -3,13 +3,11 @@
 .navegador {
     background-color: $color-primario;
     color: $color-secundario;
-    @include spa (5px);
     position: fixed;
     @include ancho (100%);
     top: 0;
     z-index: 1000;
-   
-     & .container{
+    & .container{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -34,30 +32,24 @@
       }
     &-toggler {
       border: none;
-      color: $color-secundario;
       font-size: 1.25rem;
   }
   &-collapse {
     justify-content: flex-end;
-    background-color: $color-primario;
 }
 &-nav {
     display: flex; 
     align-items: center;  
-    background-color: $color-primario;
 }
  }
 .nav-item {
     @include space2 ((0,0,0,20px));
-    background-color: $color-primario;
 }
-
 .nav-link {
     color: $color-secundario;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
-
 .nav-link:hover,
 .nav-link:focus {
     color: $link-hover-color;
