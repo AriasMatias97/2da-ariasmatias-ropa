@@ -4,7 +4,7 @@
 }
 
 .color-redsociales-twitter {
-  color: rgb(255, 255, 255);
+  color: hwb(0 100% 0%);
 }
 
 .color-redsociales-whatsapp {
@@ -28,7 +28,6 @@
 .navegador {
   background-color: #343a40;
   color: #fff;
-  padding: 5px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -59,22 +58,18 @@
 }
 .navbar-toggler {
   border: none;
-  color: #fff;
   font-size: 1.25rem;
 }
 .navbar-collapse {
   justify-content: flex-end;
-  background-color: #343a40;
 }
 .navbar-nav {
   display: flex;
   align-items: center;
-  background-color: #343a40;
 }
 
 .nav-item {
   margin: 0, 0, 0, 20px;
-  background-color: #343a40;
 }
 
 .nav-link {
@@ -92,6 +87,7 @@
 .carousel-item img {
   max-height: 600px;
   object-fit: cover;
+  margin: 0, 0, 40px, 0;
 }
 
 .carousel-control-prev,
@@ -108,19 +104,23 @@
 
 /* Estilos para el main */
 .principal {
-  padding: 80px 20px 20px;
+  padding: 125px 20px 20px;
 }
 
 .intro {
   text-align: center;
-  padding: 50px 20px;
+  padding: 20px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0, 0, 20px, 0;
 }
 
 .intro h1 {
-  margin: 0, 0, 30px, 0;
+  margin: 0, 0, 40px, 0;
   color: #343a40;
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para la sección de productos */
@@ -129,10 +129,14 @@
   background-color: #fff;
 }
 
-.products h2 {
+.titulo-principal {
   text-align: center;
   margin: 0, 0, 40px, 0;
   color: #343a40;
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product.card {
@@ -146,12 +150,12 @@
 
 .product img {
   max-height: 250px;
-  object-fit: cover;
+  object-fit: contain;
+  margin: 20px;
 }
 
 .product .card-title {
   font-size: 1.25rem;
-  margin: 10px;
 }
 
 .product .card-text {
@@ -174,28 +178,133 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0, 0, 20px, 0;
 }
-
-.contact-details h2 {
-  font-size: 2rem;
-  margin: 0, 0, 20px, 0;
-  color: #343a40;
-}
-
 .contact-details ul {
   list-style: none;
   padding: 0;
 }
-
-.contact-details ul li {
-  font-size: 1rem;
-  color: #343a40;
+.contact-details li {
   margin: 0, 0, 10px, 0;
 }
 
-.contact-details ul li strong {
+.about-us {
+  padding: 20px;
+  background-color: #fff;
+  margin: 0, 0, 20px, 0;
+}
+.about-us h2 {
+  color: #343a40;
+}
+.about-us-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Estilos para la sección de productos */
+.product {
+  text-align: center;
+  margin: 0, 0, 20px, 0;
+}
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.product:hover .product-image {
+  transform: scale(1.05);
+}
+.product-title {
+  margin: 10px;
   color: #343a40;
 }
 
+.filters {
+  margin: 0, 0, 20px, 0;
+  text-align: center;
+}
+.filters .btn-group-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filters .btn {
+  margin: 5px 0;
+}
+
+/* Estilos para la Sección de FAQs */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0, 20px;
+}
+
+.titulo-principal {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faqs {
+  background-color: #fff;
+  color: #343a40;
+  padding: 50px;
+}
+
+.faqs-item {
+  margin-bottom: 10px;
+  transition: all, 0.3s, ease-in-out;
+}
+.faqs-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faqs-question {
+  padding: 15px;
+  margin: 0;
+  transition: background-color, 0.3s, ease-in-out;
+}
+.faqs-question:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.faqs-answer {
+  display: none;
+  padding: 15px;
+  border-top: 1px solid #343a40;
+}
+.faqs-answer.active {
+  display: block;
+}
+
+/** animaciones**/
+.titulo-principal {
+  animation-name: move-title;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: infinite;
+}
+
+@keyframes move-title {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
 .pie {
   background-color: #343a40;
   color: #fff;
@@ -207,14 +316,12 @@
   flex-direction: column;
   align-items: center;
 }
-.pie .pie p {
+.pie-container p {
   margin: 0;
   font-size: 1rem;
   color: #fff;
 }
-
 .pie-links {
-  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
   display: flex;
